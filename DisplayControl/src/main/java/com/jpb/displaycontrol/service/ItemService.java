@@ -25,7 +25,7 @@ public class ItemService {
 			return itemList;  // if >single item is present JP
 			
 		}else {
-			return new ArrayList<Item>();  // if one item is present, creates ArrayList JP
+			return new ArrayList<Item>();  // if empty, creates ArrayList JP
 			}
 		}
 	
