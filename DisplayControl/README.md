@@ -33,4 +33,5 @@ _ejemplo_ **JSON**
 }
 
 <h2>!! Working on JWT once other microservices are ON. Postgresql DB on the way to be deployed in independent Docker, as all other microservices.</h2>
+* there are many fancy .println stuff to check some info in the workflow, will be removed once fully developed
       
