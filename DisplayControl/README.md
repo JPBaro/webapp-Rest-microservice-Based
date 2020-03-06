@@ -9,12 +9,12 @@ Depending on PostgreSQL DB (coming soon...)
  <blockquote> provisional fixed set up for postgresql--> see '/DisplayControl/src/main/resources/application.properties' </blockquote>
 Tested funcionallity using POSTMAN app
 <hr>
-Microservice **DisplayControl** does :
+Microservice DisplayControl does :
 
-* Listen request from API on _'host':8080_  (_http_ - GET, POST, DELETE).
+* Listen request from API client on _'host':8080_  (_http_ - GET, POST, DELETE).
 * Process request (not secured yet!).
 * SELECT/INSERT/DELETE data on/from '_DB/table_'(_username_ + _password_).
-* Send Response to API as '.json'.
+* Send Response to API client as '.json'.
 
          
       
@@ -23,15 +23,23 @@ Microservice **DisplayControl** does :
             POST 'localhost':8080/items/{id}   --> insert/update given id item in DB/table (see atributes/column of 'Item' see primaryKey)
             DELETE 'localhost':8080/items/{id}  --> idem POST but to drop given id item.
 <hr>       
-_ejemplo_ **JSON** 
-{ "manufacturer_id": "DSP123",
-  "idItemInStore": null,
-"nickname": "Monitor YUYO",
-"description": "Monitor de a marca YUYO",
-"price": 69.99,
-"units": 4
+<h5>JSON schedule </h5> 
+<html>
+<body>
+<pre>
+<code>
+{ 
+"manufacturer_id": string,
+"idItemInStore": string,
+"nickname": string,
+"description": string,
+"price": number,
+"units": number
 }
+</code>
+</pre>
+</body>
+</html>
 
-<h2>!! Working on JWT once other microservices are ON. Postgresql DB on the way to be deployed in independent Docker, as all other microservices.</h2>
-* there are many fancy .println stuff to check some info in the workflow, will be removed once fully developed
+<blockquote> selfnote --there are many fancy .println stuff to check some info in the workflow, will be removed once fully developed </blockquote>
       
